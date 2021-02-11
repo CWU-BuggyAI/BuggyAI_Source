@@ -10,6 +10,8 @@ Under the (insert directory here) directory is the actual training and testing c
 
 [Xiaoping Wu and Team] -- For granting permission to use the IP102 dataset. Our project does not use any pretrained models or other source code, as we have developed and trained our own for our own purposes. We have only used the image dataset in training and validating our own model.
 
+Here is a link to the dataset https://github.com/xpwu95/IP102
+```
 @inproceedings{Wu2019Insect,
   title={IP102: A Large-Scale Benchmark Dataset for Insect Pest Recognition},
   author={Xiaoping Wu and Chi Zhan and Yukun Lai and Ming-Ming Cheng and Jufeng Yang},
@@ -17,3 +19,4 @@ Under the (insert directory here) directory is the actual training and testing c
   pages={8787--8796},
   year={2019},
 }
+```
