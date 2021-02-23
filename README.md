@@ -1,7 +1,7 @@
 # BuggyAI_Source
 This is the main repository for the BuggyAI Code. We have split code for this repository by where it is used in a production environment.
 
-Under the Server_Code directory is a Flask REST API which resides on an Ubuntu 18.04 server using Nginx as a Reverse Proxy in front of Gunicorn which runs the Flask app.
+Under the buggyapi/buggyapi directory is the server side code for a Flask REST API which resides on an Ubuntu 18.04 server using Nginx as a Reverse Proxy in front of Gunicorn which runs the Flask app.
 Under the Training_Code directory is the actual training and testing code used for our model.
 
 --- Our Model ---
