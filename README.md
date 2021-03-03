@@ -6,7 +6,7 @@ Under the Training_Code directory is the actual training and testing code used f
 
 --- Our Model ---
 
-Our model is still under development and the .h5 file is a bit large for github. 
+Our model is still under development and the .h5 file is still being updated constantly.
 If you would like to test the model for yourself contact Kyle Brown at kylebrown804@gmail.com.
 
 --- Credits To ---
