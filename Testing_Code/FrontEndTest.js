@@ -26,7 +26,6 @@ function checkFileSize(file) {
 }
 
 function checkSafeFileName(file) {
-    let valid = true;
     let trimName = file.name.split('.');
     let illegalChars = ['\\', '/', ':', '*', '?', '"', '<', '>', '|'];
     let illegalFileNames = ['aux', 'nul', 'prn', 'con', 'lpt', 'com'];
