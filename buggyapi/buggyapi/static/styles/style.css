@@ -26,7 +26,7 @@ h1 {
 }
 
 #wrapper {
-    width: 50%;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -35,6 +35,11 @@ p#pred-window {
     width: 100%;
     height: 150px;
     border: 2px solid #DBD3D8;
+}
+
+.how-to-section {
+    width: 100%;
+    height: auto;
 }
 
 .image-preview {
@@ -64,7 +69,24 @@ form#upload_form{
 }
 
 h3, p{
+    padding-top: 1%;
+    padding-bottom: 1%;
     color: #223843;
+}
+
+#icon-ref {
+    font-size: larger;
+}
+
+p {
+    text-align: justify;
+    font-size: large;
+}
+
+.nav-item {
+    font-size: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 #imposter {
