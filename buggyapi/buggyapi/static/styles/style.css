@@ -6,7 +6,7 @@ html, body {
 
 #divHead {
     background-color: #60D662;
-    height: 15%;
+    height: 100px;
 }
 
 h1 {
@@ -62,7 +62,7 @@ p#pred-window {
 }
 
 form#upload_form{
-    width: 35%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1%;
@@ -75,6 +75,7 @@ h3, p{
 }
 
 #icon-ref {
+    margin-left: 10%;
     font-size: larger;
 }
 
@@ -90,8 +91,28 @@ p {
 }
 
 #imposter {
-    margin-right: 10%;
+    /* margin-right: 10%; */
 }
+
+.buttons-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.btn-primary {
+    flex: 1;
+    margin-left: 5%;
+    margin-right: 5%;    
+    vertical-align: top;
+    text-align: center;
+    /* height and line-height need to be the same */
+    height: 55px;
+    line-height: 55px;
+    font-size: large;
+    border: none;
+    border-radius: 2px;
+}   
 
 #imposter, #identify-bttn {
     color: #EFF1F3;

@@ -5,9 +5,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="{{url_for('static', filename='styles/style.css')}}"> -->
-    <link rel="stylesheet" href="../static/styles/style.css">
-
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style.css')}}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BuggyAi</title>
@@ -36,9 +34,8 @@
                   <a class="nav-link" href="./Manual.html">Manual</a>
                 </li>
               </ul>
+              <div id="icon-ref">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
             </div>
-
-            <div id="icon-ref">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         </nav>
     </header>
 
@@ -47,7 +44,7 @@
         <div class="how-to-section">
             <p>The use case of this software is to show the ability to identify potentially harmful pests that may
                 destroy crops and other plants. To use the BuggyAI machine learning model upload an image of an insect. 
-                Your image should have a .png or .jpg extension, and be under 1MB. Click on "Identify" button to test the image 
+                Your image should have a .jpg/.jpeg extension, and be under 1MB. Click on "Identify" button to test the image 
                 against our model and get a prediction. Note that random images or ones with large
                 amount of greenery/plants may yield somewhat random results. This is a limitation of training data collected
                 as in most cases pest insects reside on plants. The model's accuracy should be seen as a proof of concept as it is sometimes
@@ -55,9 +52,11 @@
         </div>
 
         <form id="upload_form" enctype="multipart/form-data">
-            <label for="inputFile" class="btn btn-primary" id="imposter">Choose a picture</label>
+            <div class="buttons-wrapper">
+                <label for="inputFile" class="btn-primary" id="imposter">Choose a picture</label>
+                <button class="btn-primary" id="identify-bttn">Identify</button>
+            </div>
             <input type="file" hidden="hidden" name="inputFile" id="inputFile"/>
-            <button class="btn btn-primary" id="identify-bttn">Identify</button>
         </form>
 
         <div class="image-preview" id="imagePreview">
@@ -72,7 +71,7 @@
     <script>
         // [ ---------------------------------- File Testing Functions ---------------------------------------]
         function checkFileType(file) {
-            let validExtensions = ['jpg', 'jpeg', 'png'];
+            let validExtensions = ['jpg', 'jpeg'];
             let trimExt = file.name.split('.');
             let extension = trimExt[trimExt.length - 1];
 
