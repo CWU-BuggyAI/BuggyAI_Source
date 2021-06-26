@@ -4,11 +4,6 @@ This is the main repository for the BuggyAI Code. We have split code for this re
 Under the buggyapi/buggyapi directory is the server side code for a Flask REST API which resides on an Ubuntu 18.04 server using Nginx as a Reverse Proxy in front of Gunicorn which runs the Flask app.
 Under the Training_Code directory is the actual training and testing code used for our model.
 
---- Our Model ---
-
-Our model is still under development and the .h5 file is still being updated constantly.
-If you would like to test the model for yourself contact Kyle Brown at kylebrown804@gmail.com.
-
 --- Credits To ---
 
 [Xiaoping Wu and Team] -- For granting permission to use the IP102 dataset. Our project does not use any pretrained models or other source code, as we have developed and trained our own for our own purposes. We have only used the image dataset in training and validating our own model.
